@@ -25,6 +25,6 @@ corTile <- function(x, ...){
     tilePlot <- tilePlot + theme(axis.text.x = element_text(angle=45, 
                                 vjust=1, size=11, hjust=1))
     tilePlot <- tilePlot + theme(axis.title = element_blank())
-    tilePlot <- tilePlot + coord_equal()
+    tilePlot <- tilePlot + coord_equal() + ggtitle("Correlation Matrix") + theme(plot.title = element_text(lineheight=2, face="bold"))
     return(tilePlot)
 }
